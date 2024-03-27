@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+</head>
+<body>
+<form class="contact_form" method="post"> {% csrf_token %}
+    <input class="form-control" type="text" placeholder="Name*" name="name">
+    <input class="form-control" type="email" placeholder="Email*" name="email">
+    <input type="text" placeholder="Subject*" name="subject">
+    <textarea class="form-control" cols="30" rows="10" placeholder="Message*" name="message"></textarea>
+    <input type="submit" value="Xabar jo'natish">
+</form>
+</body>
+</html>
